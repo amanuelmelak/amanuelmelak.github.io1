@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amanuel Melak | Portfolio</title>
+  <style>
+    :root {
+      --primary: #4CAF50;
+      --secondary: #f9f9f9;
+      --accent: #0066cc;
+      --footer-bg: #333;
+      --footer-text: #fff;
+      --card-bg: #fff;
+      --card-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--secondary);
+      color: #222;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 0 1.5rem 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 0.5rem 0 0 0;
+      font-size: 1.2rem;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      max-width: 700px;
+      margin: auto;
+      width: 100%;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--primary);
+      margin-bottom: 1.2rem;
+      box-shadow: 0 2px 12px rgba(76, 175, 80, 0.15);
+      background: #eee;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .intro h2 {
+      margin: 0.5rem 0 0.7rem 0;
+      font-size: 2rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .intro p {
+      margin: 0.5rem 0 0 0;
+      font-size: 1.13rem;
+      color: #555;
+    }
+
+    .contact-card {
+      background: var(--card-bg);
+      box-shadow: var(--card-shadow);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .contact-card h2 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 1.3rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-list li {
+      margin: 1rem 0;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-list a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-left: 0.5rem;
+      word-break: break-all;
+    }
+
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0 2.5rem 0;
+    }
+
+    .social-btn {
+      display: inline-block;
+      color: #fff;
+      font-size: 1rem;
+      padding: 0.7rem 1.3rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.09);
+    }
+
+    .linkedin { background: #0e76a8; }
+    .instagram { background: #e1306c; }
+    .telegram { background: #0088cc; }
+
+    .social-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-2px) scale(1.04);
+    }
+
+    .my-link {
+      background: var(--card-bg);
+      box-shadow: var(--card-shadow);
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .my-link a {
+      color: var(--accent);
+      font-size: 1.07rem;
+      font-weight: 600;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .my-link a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      text-align: center;
+      padding: 1.2rem 0;
+      font-size: 0.98rem;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      letter-spacing: 0.5px;
+      margin-top: auto;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem 0.3rem;
+      }
+      .contact-card, .my-link {
+        padding: 1rem;
+      }
+      .profile-img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Amanuel Melak</h1>
+    <p>Welcome to my personal website & portfolio</p>
+  </header>
+  
+  <main>
+    <!-- Replace with your actual profile image file name -->
+    <img src="IMG_20250729_174305_135.jpg" alt="Amanuel Melak Profile Picture" class="profile-img" />
+
+    <section class="intro">
+      <h2>Amanuel Melak</h2>
+      <p>Hello! I'm Amanuel Melak, a passionate developer and technology enthusiast. Explore my portfolio and feel free to reach out!</p>
+    </section>
+
+    <section class="contact-card" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <ul class="contact-list">
+        <li>📞 <a href="tel:+251921014034">+251 921 014034</a></li>
+        <li>📧 <a href="mailto:amanuelmelak781@gmail.com">amanuelmelak781@gmail.com</a></li>
+      </ul>
+    </section>
+
+    <section class="social-media" aria-label="Social Media Links">
+      <a href="https://www.linkedin.com/in/amanuel-melak-a9a2b2232" target="_blank" class="social-btn linkedin" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://www.instagram.com/lij_aman2" target="_blank" class="social-btn instagram" rel="noopener noreferrer">Instagram</a>
+      <a href="https://t.me/Lij_Aman_M" target="_blank" class="social-btn telegram" rel="noopener noreferrer">Telegram</a>
+    </section>
+
+    <section class="my-link">
+      <p>Visit my official website:</p>
+      <a href="https://amanuelmelak.github.io target="_blank" rel="noopener noreferrer">
+        🌐 https://amanuelmelak.github.io
+      </a>
+    </section>
+  </main>
+  
+  <footer>
+    &copy; 2025 Amanuel Melak. All rights reserved.
+  </footer>
+</body>
+</html>
